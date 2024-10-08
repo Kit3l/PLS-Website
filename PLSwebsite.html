@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  .navbar {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  margin-right: 20px;
+}
+
+.navbar img.logo {
+  height: 40px;
+}
+
+.navbar div {
+  display: flex; /* Arrange links in a row */
+  align-items: center; /* Vertically center links */
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 10px; /* Adjusted spacing */
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar button {
+  background-color:maroon;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Space between links and button */
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; /* Add margin to separate it from other content */
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: maroon;
+  color: white;
+}
+
+td {
+  background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: maroon;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.content strong {
+    color: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #f3efef;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
+.content strong {
+    color: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.content-container {
+    background-image: url('background-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white to make text more readable */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+    color: #000;
+}
+
+
+.thematic-areas, .what-to-expect {
+    flex: 1;
+    padding: 40px;
+}
+
+.thematic-areas {
+    background-color: #fff;
+}
+
+.thematic-areas h2 {
+    background-color: #a63d3d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.thematic-areas ul {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.thematic-areas ul li {
+    font-size: 1.2em;
+    line-height: 2;
+    color: #333;
+}
+
+.what-to-expect {
+    background-color: #a63d3d;
+    color: white;
+}
+
+.what-to-expect h2 {
+    background-color: #fff;
+    color: #a63d3d;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.what-to-expect p {
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            background-color: #b22222;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            margin: 0 0 20px 0;
+        }
+        .outcome {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 50px;
+        }
+        .icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+        }
+        .clipboard {
+            background-color: #20b2aa;
+        }
+        .magnifier {
+            background-color: #dda0dd;
+        }
+        .roadmap {
+            background-color: #ffa500;
+        }
+        .network {
+            background-color: #3cb371;
+        }
+        .spiral {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255,192,203,0.2) 0%, rgba(255,192,203,0) 70%);
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            background-color: #b22222;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            margin: 0 0 20px 0;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            padding: 0 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight {
+            background-color: #ffe4e1;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .shape {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255,192,203,0.3);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+      }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    background-color: #b22222; /* Maroon color */
+    color: white;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.attendance-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%; /* Adjust as needed */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Style for the container */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+
+/* Style for the container */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Container styles */
+.container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between logos */
+  margin: 20px 0;
+}
+
+/* Style for the container */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Style for the logo container */
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Style for individual logos */
+.logo {
+  max-width: 150px; /* Set maximum width for logos */
+  height: auto;     /* Keep the aspect ratio */
+  object-fit: contain; /* Ensure the entire logo is visible */
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect to logos */
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .logo {
+      max-width: 100px; /* Reduce logo size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+      max-width: 80px; /* Further reduce logo size on very small screens */
+  }
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #b22222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ff8c00;
+}  
+
+.image-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+.image-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: black; /* Set the footer background color to maroon */
+  color: white; /* Set text color to white for contrast */
+  padding: 30px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 1 auto;
+}
+
+footer p {
+  margin: 1;
+  padding: 30px 0;
+  font-size: 2em;
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div>
+          <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\government-of-kenya-emblem-gok-logo-D071CE91D3-seeklogo.com.webp" alt="Logo" class="logo">
+          <div>
+              <a href="#Home">Home</a>
+              <a href="#Achievements of Past PLS ">Achievements of Past PLS </a>
+              <a href="#Thematic Areas">Thematic Areas</a>
+              <a href="#programme">Programme</a>
+              <a href="#Our Partners">Our Partners</a>
+          </div>
+        </div>
+        <a href="Register.html" style="background-color: orange; padding: 10px 20px; border-radius: 5px;">Register</a>
+        <a href="Contact us.html" style="background-color: orange; padding: 10px 20px; border-radius: 5px;">Contact us</a>
+    </div>
+
+    <div class="container" id="Home"></div>
+    <div class="banner">
+    <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\WhatsApp Image 2024-09-30 at 14.13.10_f1351179.jpg" alt="Banner Image">
+    <div class="banner-text">
+      <h1>Unlocking the policy and financing bottlenecks to maximize pastoralism potential in Kenya</h1>
+      <p>Wajir Town</p>
+      <p>28 November - 1 December 2024</p>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <th colspan="3">Pastoralist Parliamentary Group</th>
+    </tr>
+    <tr>
+      <th>Vision</th>
+      <th>Mission</th>
+      <th>Motto & Core values</th>
+    </tr>
+    <tr>
+      <td>To be a critical parliamentary force that ensures security, unity and prosperity for pastoralists in Kenya</td>
+      <td>To provide political leadership in the policies and implementation of development legislation that achieve pastoralism's full potential</td>
+      <td>
+        <ul>
+          <li>Integrity</li>
+          <li>Honesty</li>
+          <li>Unity in Diversity</li>
+          <li>Peace</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+  <div class="container" id="Achievement of Past PLS  ">
+    
+  <div class="header">
+      <h1>Achievements of Past PLS </h1>
+  </div>
+  <div class="content">
+      <p>
+          Since the first Pastoralist Leadership Summit (PLS) hosted by Narok County in 2013, notable achievements have been realized, including convening and uniting the national and county-level pastoralist leadership to speak in one voice. The platform has become a vital currency and a shared leadership space for expressing and echoing Kenya's pastoralist voices and aspirations.
+      </p>
+      <p>
+          Some of the notable achievements of the PLS include the following: First, it has led the formation of institution development, including the creation of the Ministry of Development of Northern Kenya and other Arid Lands under the office of the Prime Minister and National Drought Management Authority (NDMA), National Council for Nomadic Education (NACONEK) and Investment fund and ASAL stakeholders’ forum. Major policy development areas are Sessional paper no 8 of 2012, ASAL policy, Vision 2023 annexe, legislation on the protection and registration of the customary lands - the Community Land Act 2016. Additionally, it has led to the creation of the Livestock Marketing Board and the legal framework for operations of the Equalization Funds. Notably, it has contributed to developing the National Drought Emergency Fund (NDEF) Regulations, 2021, for the national government to commit an annual budget of KES 2 billion Kenya Shillings to climate change and drought response activities in Kenya. These policies are meant to push the state to make deliberate policy provisions to close the history of marginalization and neglect of the region and initiate new national developments in pastoralist areas and the ASAL.
+      </p>
+  </div>
+  <div class="content-container">
+    <p class="paragraph">
+        <strong>Second,</strong> PLS has influenced actions through PPG members' lobbying, advocating, and articulating issues that have contributed to restoring peace, ending cattle thefts, mitigating inter-community violence, and implementing appropriate policy measures in the pastoralist regions.
+    </p>
+    <p class="paragraph">
+        <strong>Third,</strong> following a resolution from the PLS, the County Governors agreed to allocate at least 10% of the county development budget to the livestock sector. This outcome further consolidated pastoralist leadership voice in public rejection of the Building Bridges Initiatives (BBI) as well as several adverse anti-pastoralist clauses and other areas of general national interest that include a clause that aimed at creating the ombudsman's office for the judiciary and biased revenue-sharing formula, that would have resulted in the majority of the FCDC counties losing revenues based on the principle of one-person, one shilling & one vote. The pastoralist leader's counterproposal was to moderate it with one kilometre, one shilling, and one vote; however, for equity and interest of national development, the public resources in Kenya should be shared based on one shilling, one nation, one people to harness potential wherever it is available in the country.
+    </p>
+    <p class="paragraph">
+        <strong>Finally,</strong> the PLS initiative resulted in the Government of Kenya partnering with the World Bank in 2018 to increase the region's investment portfolio and infrastructure development. The regional investment program was launched with over USD two billion, including projects such as Off Grid Solar Access, Climate Smart Agriculture, Water and Sanitation Development Project, Northeastern Transport Improvement Project, Development Response to Displacement Impacts and National Safety Net Program Additional Financing.
+    </p>
+</div>
+<div class="container" id="ThematicAreas">
+    <h2>Thematic Areas</h2>
+      <ul>
+          <li>Ending Drought Emergencies</li>
+          <li>Natural Resources and Land</li>
+          <li>Peace and Security</li>
+          <li>Livestock</li>
+          <li>Infrastructure</li>
+          <li>Human Capital</li>
+          <li>Gender, Youth and Social Issues</li>
+          <li>ASAL policy Review</li>
+      </ul>
+  </div>
+  <div class="what-to-expect">
+      <h2>What to Expect</h2>
+      <p>
+          Over three days, 400+ Delegates will participate in different activities aligned cutting across the thematic tracks to devise and implement comprehensive strategies to mitigate and ultimately end drought emergencies, secure land rights for communities, address and solve inter-community conflicts, enhance livestock production, marketing, and overall livelihood for pastoralists in the drylands region.
+      </p>
+  </div>
+  <div class="container">
+    <div class="spiral"></div>
+    <h1>Expected Outcomes</h1>
+    
+    <div class="outcome">
+        <div class="icon clipboard"></div>
+        <p><strong>Develop comprehensive policy recommendations</strong> addressing key challenges pastoralist communities face. Establish an investment roadmap that outlines strategic interventions and policy reforms needed to support pastoralism.</p>
+    </div>
+    
+    <div class="outcome">
+        <div class="icon magnifier"></div>
+        <p><strong>Identify and analyze barriers</strong> hindering the effective implementation of pastoralist policies. Develop an intervention strategy to address these bottlenecks and enhance policy implementation.</p>
+    </div>
+    
+    <div class="outcome">
+        <div class="icon roadmap"></div>
+        <p><strong>Facilitate the development of a roadmap</strong> to accelerate the implementation of priority policies and investment options identified during the summit. Foster collaboration between national and county governments, private sector stakeholders, and development partners to ensure sustainable financing and implementation of pastoralist-focused initiatives.</p>
+    </div>
+    
+    <div class="outcome">
+        <div class="icon network"></div>
+        <p><strong>Establish a sustainable funding mechanism</strong> that supports long-term development investments in pastoralist areas. Enhance financial structures and linkages between national and county levels to mobilize resources for pastoralist development projects.</p>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="shape"></div>
+  <h1>How do we get there?</h1>
+  
+  <div class="content">
+      <div class="column">
+          <h3>Address areas that require commitment from government for immediate actions:</h3>
+          <ul>
+              <li>Appoint the members of the Board of Directors to the National Livestock Development and Promotion Service as per the legal notice no 87 of 2nd June 2016.</li>
+              <li>Increase the annual budget allocation to two billion shillings to the drought contingency fund.</li>
+              <li>Strengthen the Establishment of Northern Kenya Investment Fund</li>
+              <li>Develop the carbon credit programs in the pastoralist areas.</li>
+              <li>Provide an adequate budget to the State Department of Land & Physical Planning to</li>
+              <li>Implement the Community Land Act 2016.</li>
+              <li>Sort out the Natural resource benefit-sharing policies and legislation.</li>
+          </ul>
+      </div>
+      
+      <div class="column">
+          <h3>Highlighting areas of strategic interventions to enhance the implementation of Vision 2030 and the critical foundation of development in the drylands of Kenya.</h3>
+          <ul>
+              <li>Preventing crime and justice promotes peace and security, particularly in ending the region's intercommunity conflicts, cattle theft, and violent extremism. The conference will highlight the significance of one standard: the rule of law, equal measures and the value of human life in Kenya.</li>
+              <li>Increase infrastructural development (telecommunication, roads, & energy - zero-mile connection.</li>
+              <li>To raise awareness of Human capital development, a national adult literacy campaign programme will be initiated to increase literacy levels in pastoralists.</li>
+          </ul>
+          
+          <div class="highlight">
+              <p>These issues require adequate sensitization of the pastoralist political leadership to reach a consensus, achieve a clear understanding, settle debate, and fast-track actions.</p>
+              <ul>
+                  <li>Community land registration</li>
+                  <li>Carbon Credit and Conservation</li>
+                  <li>Equalization Fund updates</li>
+                  <li>Integrity and Accountability</li>
+              </ul>
+          </div>
+        </div>
+        </div>
+        <div class="container">
+          <h1>WHO IS ATTENDING?</h1>
+          
+          <div class="attendance-list">
+              <div class="column">
+                  <ul>
+                      <li>PPG,(Senators, women Rep, Constituency MPs)</li>
+                      <li>FCDC Governors</li>
+                      <li>Pastoralist MPS from IGAD countries & EALA</li>
+                      <li>Other Governors from PPG Counties</li>
+                      <li>Speakers of County Assembly)</li>
+                      <li>Deputy Governor's</li>
+                      <li>County Majority leaders</li>
+                      <li>County Minority leaders</li>
+                      <li>County Assemblies (2 women leaders each from FCDC counties)</li>
+                      <li>County Executive - FCDC Sector Forum Chairs ( Agriculture & Livestock,
+                        Land, Peace, Education, Health & Blue Economy, Women Affairs, & Education.</li>
+                      <li>County Assembly of Wajir County (all MCAs)
+                      </li>
+                      <li>Government ministries- (Department of ASAL)
+                      </li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <ul>
+                      <li>ASAL State Corporations</li>
+                      <li>Senior Govt Officials from ASALS</li>
+                      <li>CSOs (local, National & international NGOs)
+                      </li>
+                      <li>Donors/Embassies</li>
+                      <li>PPG Elders</li>
+                      <li>Pastoralists Associations</li>
+                      <li>Secretariat-FCDC/DLCI
+                      </li>
+                      <li>Consultants</li>
+                      <li>Faciltators</li>
+                      <li>Rappotures</li>
+                      <li>Media</li>
+                    
+                  </ul>
+              </div>
+          </div>
+        
+    </div>
+    <div class="container" id="Programme">
+      <h1>PROGRAMME</h1>
+
+
+      <div class="image-gallery">
+        <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\IMG-20240930-WA0023.jpg" alt="Image 1">
+        <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\IMG-20240930-WA0026.jpg" alt="Image 2">
+        <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\IMG-20240930-WA0024.jpg" alt="Image 3">
+        <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\IMG-20240930-WA0025.jpg" alt="Image 4">
+        <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\IMG-20240930-WA0027.jpg" alt="Image 5">
+
+      </div>
+
+      <div class="container" id="Our Partners">
+        <h1>OUR PARTNERS</h1>
+        
+        <h2>Organizers</h2>
+        <div class="logo-container">
+            <!-- DLCI Logo -->
+            <a href="https://www.dlci-hoa.org" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\DLCI LOGO.jpg" alt="DLCI Logo" class="logo logo-dlci">
+            </a>
+            
+            <!-- Wajir County Logo -->
+            <a href="" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\government-of-kenya-emblem-gok-logo-D071CE91D3-seeklogo.com.webp" alt="Wajir County Logo" class="logo logo-wajir">
+            </a>
+            
+            <!-- FCDC Logo -->
+            <a href="https://www.fcdc.or.ke" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\FCDC LOGO.jpg" alt="FCDC Logo" class="logo logo-fcdc">
+            </a>
+            
+            <!-- Ministry Logo -->
+            <a href="https://meacard.go.ke/" target="_blank"> <!-- Replace with correct link -->
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\ministry logo.jpg" alt="Ministry Logo" class="logo logo-img1">
+            </a>
+        </div>
+        
+        <h2>Host</h2>
+        <div class="logo-container">
+            <!-- Ministry Logo -->
+            <a href="https://www.wajir.go.ke" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\wajir county logo.jpg" alt="Wajir County Logo" class="logo logo-ministry">
+            </a>
+        </div>
+    
+        <h2>Donors</h2>
+        <div class="logo-container">
+            <!-- christisen Logo -->
+            <a href="https://www.fao.org/countryprofiles/index/en/?iso3=KEN" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\CHRISTENSEN FUND.jpg" alt="FAO Logo" class="logo logo-img3">
+            </a>
+    
+            <!-- NDMA Logo-->
+            <a href="https://ndma.go.ke/" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\NDMA.jpeg" alt="WWF Logo" class="logo logo-img2">
+            </a>
+    
+            <!-- EU Logo -->
+            <a href="https://www.fdfa.admin.ch/sdc" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\SHWEIZERISCHE.jpeg" alt=" Logo" class="logo logo-eu">
+            </a>
+    
+            <!-- Mercy corpse -->
+            <a href="https://www.mercycorps.org/where-we-work/kenya" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\MERCY CORPS.jpeg" alt="MERCY CORPSE Logo" class="logo logo-MERCY">
+            </a>
+    
+            <!-- USAID Kuza -->
+            <a href="https://www.usaid.gov/kenya/fact-sheets/kenya-usaid-kuza" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\USAID KUZA.jpg" alt="USAID Kuza Logo" class="logo logo-img4">
+            </a>
+    
+            <!-- Aga Khan University -->
+            <a href="https://www.aku.edu" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\AGA KHAN UNIVERSITY.png" alt="Aga Khan University Logo" class="logo logo-img4">
+            </a>
+    
+            <!-- NRT -->
+            <a href="https://www.nrt-kenya.org/" target="_blank"> <!-- Replace with correct link -->
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\IMG-20240912-WA0024.jpg" alt="Image 4" class="logo logo-img4">
+            </a>
+    
+            <!-- National Council for Nomadic Education in Kenya -->
+            <a href="https://naconek.ke/" target="_blank"> <!-- Replace with correct link -->
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\NATIONAL COUNCIL FOR NOMADIC EDUCATION IN KENYA.png" alt="NCNEK Logo" class="logo logo-img4">
+            </a>
+    
+            <!-- Image 4 -->
+            <a href="https://www.fao.org/countryprofiles/index/en/?iso3=KEN" target="_blank"> <!-- Replace with correct link -->
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\IMG-20240912-WA0021.jpg" alt="Image 4" class="logo logo-img4">
+            </a>
+    
+            <!-- IPI Voox -->
+            <a href="https://www.interpeace.org/" target="_blank"> <!-- Replace with correct link -->
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\LogoIPIvoox.png" alt="IPI Voox Logo" class="logo logo-img4">
+            </a>
+    
+            <!-- International Alert -->
+            <a href="https://www.international-alert.org" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\INTERNTIONAL ALERT.jpg" alt="International Alert Logo" class="logo logo-img4">
+            </a>
+    
+            <!-- Wwf -->
+            <a href="https://www.worldwildlife.org/" target="_blank"> <!-- Replace with correct link -->
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\WhatsApp Image 2024-09-30 at 14.13.58_f7472a57.jpg" alt="Image 2" class="logo logo-img2">
+            </a>
+    
+            <!-- Islamic Relief -->
+            <a href="https://www.islamic-relief.org" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\ISLAMIC RELIEF.png" alt="Islamic Relief Logo" class="logo logo-img2">
+            </a>
+    
+            <!-- MWA Logo -->
+            <a href="https://www.mwawater.org" target="_blank">
+                <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\mwa_logo_color.png" alt="MWA Logo" class="logo logo-img2">
+            </a>
+        </div>
+    </div>
+    
+    
+    
+            
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100063527860287" target="_blank">
+            <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\facebook logo.png" alt="Facebook">
+          </a>
+          <a href="https://x.com/PPGKenya" target="_blank">
+            <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\x logo.png" alt="X">
+          </a>
+          <a href="https://www.linkedin.com/company/drylands-learning-and-capacity-building-initiative/" target="_blank">
+            <img src="C:\Users\FAHIM\Music\COPY OF PROJECT\IMAGES\heart-with-social-media-logo-of-linkedin.png" alt="Instagram">
+          </a>
+        </div> 
+      </div>
+
+      <footer></footer>
+        <div class="container">
+            <p>&copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+        
+</body>
+</html>
