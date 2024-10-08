@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .registration-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .registration-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="number"],
+        .registration-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .registration-form button[type="submit"] {
+            background-color: #b22222; /* Maroon color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .registration-form button[type="submit"]:hover {
+            background-color: #800000;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>User Registration</h2>
+        <form class="registration-form" action="YOUR_SCRIPT_WEB_APP_URL" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="organizationName">Organization:</label>
+            <input type="text" id="organizationName" name="organizationName" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="personwithDisabilities">Person With Disabilities:</label>
+            <select id="personwithDisabilities" name="personwithDisabilities" required>
+                <option value="">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            
+            <a href="#" id="fillDetailsLink" style="display: none;" onclick="showInputField(event)">Click here to provide details</a>
+            
+            <script>
+            document.getElementById("personwithDisabilities").addEventListener("change", function() {
+                var link = document.getElementById("fillDetailsLink");
+                link.style.display = this.value === "Yes" ? "block" : "none";
+            });
+            
+            function showInputField(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                document.getElementById("additionalInfo").style.display = "block";
+            }
+            </script>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
